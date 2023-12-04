@@ -1,6 +1,10 @@
 /** @type {import('next').NextConfig} */
 const path = require('path')
-const nextConfig = {}
+const nextConfig = {
+  reactStrictMode: true,
+  distDir: 'build',
+  output: 'export'
+}
 
 module.exports = nextConfig
 

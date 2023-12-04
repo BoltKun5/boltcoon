@@ -1,0 +1,196 @@
+form.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  max-width: 512px;
+  position: relative;
+  margin-bottom: 40px;
+
+  &::before {
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    left: -15px;
+    top: -15px;
+    z-index: 1;
+    transition: 1s;
+    border-radius: 6px;
+  }
+
+  &.submitted::before {
+    pointer-events: all;
+    background: white;
+  }
+
+  &.submitted::after {
+    pointer-events: all;
+    opacity: 1;
+    animation: mail_animation 5s forwards;
+  }
+
+  &::after {
+    content: "Votre message a été envoyé.";
+    z-index: 10;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    height: 280px;
+    background: url('/icons/mail_colored.svg') no-repeat;
+    background-size: 100px 170px;
+    background-position: 100% -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $primary;
+    font-weight: bold;
+    transition: 1s;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .half {
+    width: calc(100% / 2 - 8px);
+  }
+
+  .full {
+    width: 100%;
+  }
+
+  &>div:not(.check) {
+    .label {
+      color: #000;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 100%;
+      margin-bottom: 16px;
+    }
+
+    input,
+    textarea {
+      border-radius: 10px;
+      border: 2px solid rgba(0, 0, 0, 0.10) !important;
+      background: #FFF;
+      width: 100%;
+      margin: auto;
+      padding: 10px;
+      box-sizing: border-box;
+      color: #818181;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      font-family: "Raleway", Sans-serif;
+      outline: none;
+
+
+    }
+
+    input {
+      height: 46px;
+    }
+
+    textarea {
+      resize: none;
+      height: 256px;
+    }
+  }
+
+  .check {
+    display: flex;
+    position: relative;
+
+    input {
+      position: absolute;
+      margin: 0;
+      top: 10px;
+      left: 2.5px;
+      pointer-events: none;
+      opacity: 0;
+    }
+
+    label {
+      background-color: #f1f1f1;
+      width: 16px;
+      min-width: 16px;
+      height: 16px;
+      border-radius: 2px;
+      margin: auto;
+      margin-right: 10px;
+      transition: .3s;
+    }
+
+    input:checked+label {
+      background-color: $primary;
+    }
+
+    &>div {
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+
+  .link-button {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 8px;
+    padding: 12px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: $primary;
+    width: fit-content;
+    cursor: pointer;
+    box-shadow: none;
+    border: none;
+
+    &:disabled {
+      opacity: .7;
+      pointer-events: none;
+    }
+  }
+
+  .submit {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+
+    .error {
+      color: #480000;
+      border: 1px solid #430000;
+      background-color: #fce3e389;
+      border-radius: 6px;
+      box-sizing: border-box;
+      padding: 5px 10px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+@keyframes mail_animation {
+  0% {
+    background-position: 0 -10px;
+  }
+
+  10% {
+    background-position: 50% -10px;
+  }
+
+  90% {
+    background-position: 50% -10px;
+  }
+
+  100% {
+    background-position: 100% -10px;
+  }
+}

@@ -1,42 +1,49 @@
 [
   {
-    "title": "Exemple",
-    "desc": "Exemple de description avec\n retour à la ligne\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
-    "subtitle": "Exemple de subtitle",
+    "title": "Vokit",
+    "desc": "Ce projet personnel a été réalisé dans le but de créer un outil de gestion de collection profitant des dernières technologies que le web a à offrir. Ce projet a été intégralement réalisé par mes soins.\n\nTechnologies utilisées : ReactJS, Express, Postgres\n\n<a target='_blank' href='https://app.vokit.fr/'>vokit.fr</a>",
+    "subtitle": "Site web de gestion de collection",
     "images": [
-      "image1.png",
-      "image2.jpg",
-      "image3.jpg",
-      "image4.jpg",
-      "image4.jpg",
-      "image4.jpg",
-      "image4.jpg",
-      "image4.jpg",
-      "image4.jpg",
-      "image4.jpg",
-      "image4.jpg",
-      "image4.jpg",
-      "image4.jpg"
+      "vokit/image1.png",
+      "vokit/image2.png",
+      "vokit/image3.png",
+      "vokit/image4.png"
     ]
   },
   {
-    "title": "Exemple",
-    "desc": "Exemple de description avec\n retour à la ligne",
-    "subtitle": "Exemple de subtitle",
+    "title": "Site web Vision RP",
+    "desc": "Ce site web a été réalisé pour le serveur de jeu Vision RP présent sur GTA V Online. L'objectif était clair : avoir la possibilité pour les joueurs d'élargir la portée de leur role-play jusqu'au site internet du serveur de jeu.\n\nMon travail a été d'intégrer les maquettes et les idées qui m'ont été données. Les outils à proposer aux joueurs étaient nombreux : connexion via Discord, création d'un journal sur le site, un système de musique senblable à Spotify, la possibilité d'afficher les streamers actuellement en ligne sur le serveur entre autre, le tout supervisable par les administrateurs. Pour ça, un panel de gestion a spécialement été conçu.\n\nOutils utilisés : ReactJS, Express, MySQL, API Twitch, OAUTH Discord\n\n<a href='https://visionrp.fr' target='_blank'>visionrp.fr</a>",
+    "subtitle": "Un site web avancé qui engage la communauté",
     "images": [
-      "image1.png",
-      "image2.jpg",
-      "image3.jpg",
-      "image4.jpg",
-      "image4.jpg",
-      "image4.jpg",
-      "image4.jpg",
-      "image4.jpg",
-      "image4.jpg",
-      "image4.jpg",
-      "image4.jpg",
-      "image4.jpg",
-      "image4.jpg"
+      "vision_site/image1.png",
+      "vision_site/image2.png",
+      "vision_site/image3.png",
+      "vision_site/image4.png",
+      "vision_site/image5.png"
+    ]
+  },
+  {
+    "title": "Ressources visuelles Vision RP",
+    "desc": "Ces ressources ont été réalisées pour le serveur de jeu Vision RP présent sur GTA V Online. L'objectif a été de créer des interfaces personnalisées qu'on ne retrouve nul part chez la concurrence. Les maquettes et les fonctionnalités souhaitées m'ont été fournies, je me suis occupé d'intégrer ces idées tout en offrant une expertise afin d'optimiser au maximum le travail laborieux que représente la réalisation d'interfaces personnalisées sur l'ensemble du jeu.\n\nCela inclut entre autre : création de personnage, boutique en jeu, création et signature de contrats en jeu, gestion de véhicule ou de propriété en jeu...\n\nOutils utilisés : ReactJS\n\nLes interfaces sont visibles en jeu sur le serveur Vision RP Free Access",
+    "subtitle": "Un site web avancé qui engage la communauté",
+    "images": [
+      "vision_game/image1.png",
+      "vision_game/image2.png",
+      "vision_game/image3.png",
+      "vision_game/image4.png",
+      "vision_game/image5.png",
+      "vision_game/image6.png",
+      "vision_game/image7.png"
+    ]
+  },
+  {
+    "title": "Star Market",
+    "desc": "Ce site web a été réalisé pour un projet de livraison nocturne d'aliments, nourriture et objets du quotidien. La réalisation complète m'a été confiée. Pour l'aspect général, j'ai proposé différents thèmes WordPress au client avant de personnalisé le thème choisi en ajoutant des éléments supplémentaire comme un slider sur mesure.\n\nLe projet est un site de vente e-commerce classique avec quelques fonctionnalitées plus pointues comme la demande d'un montant de commande minimal en fonction de l'adresse de livraison. J'ai également proposé un suivis et une formation au client afin qu'il puisse gérer convenablement son site.\n\nOutils utilisés : Wordpress, Woocommerce, PHP\n\n<a href='https://star-market.fr' target='_blank'>star-market.fr</a>",
+    "subtitle": "e-commerce de proximité",
+    "images": [
+      "starmarket/image1.png",
+      "starmarket/image2.png",
+      "starmarket/image3.png"
     ]
   }
 ]

@@ -1,24 +1,21 @@
+/* eslint-disable @next/next/no-img-element */
 'use client'
 
 import Link from 'next/link';
 import Image from 'next/image';
 import './global.scss';
 import { usePathname } from 'next/navigation';
-import { useState } from 'react';
-import { Metadata } from 'next';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     const pathname = usePathname();
-    const [t, setT] = useState(1);
     return (
         <html lang="fr">
             <body>
                 <header>
-                    <Image className='logo' src="/logo.png" alt='logo' width={50} height={43} priority />
+                    <Link href={'/'} className='logo'>
+                        <Image src="/logo.png" alt='logo' width={50} height={43} priority />
+                    </Link>
                     <nav className="buttons">
-                        <Link href={'/'} className={pathname === '/' ? 'active' : ''}>
-                            Accueil
-                        </Link>
                         <Link href={'/work'} className={pathname === '/work' ? 'active' : ''}>
                             Réalisations
                         </Link>
@@ -37,8 +34,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     <div className="contact">
                         <div className="title">Contact</div>
                         <ul>
-                            <li><a href='mailto:contact@boltcoon.fr'>contact@boltcoon.fr</a></li>
-                            <li>06 51 31 35 42</li>
+                            <li><img src='/icons/mail.svg' alt='' /><a href='mailto:contact@boltcoon.fr'>contact@boltcoon.fr</a></li>
+                            <li><img src='/icons/phone.svg' alt='' />06 51 31 35 42</li>
                         </ul>
                     </div>
                     <div className="legal">
@@ -47,11 +44,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                             <li>
                                 <Link href='/legal'>Mentions légales</Link>
                             </li>
+                            <li>
+                                <Link href='/privacy'>Politique de Confidentialité</Link>
+                            </li>
                         </ul>
                     </div>
                     <div className="copyright">Copyright © 2023 Boltcoon. Tous droits réservés.</div>
                 </footer>
             </body>
-        </html>
+        </html >
     )
 }

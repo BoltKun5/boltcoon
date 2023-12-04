@@ -1,5 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 'use client'
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import './style.scss';
 import projects from '@/projects.json';
 
@@ -10,18 +11,34 @@ interface Project {
   images: string[];
 }
 
-const Modal = ({ limit }: { limit?: number }) => {
+const Creations = ({ limit }: { limit?: number }) => {
   const [activeProject, setActiveProjet] = useState<null | Project>(null);
   const [offset, setOffset] = useState(0);
   const [activeImage, setActiveImage] = useState(0);
+  const [className, setClassName] = useState('fade-in');
+
+  const closeModal = () => {
+    if (className === 'fade-out') return;
+    setClassName('fade-out');
+    setTimeout(() => {
+      setActiveProjet(null);
+    }, 300);
+  }
+
+  const openModal = (project: Project) => {
+    setClassName('fade-in');
+    setActiveProjet(project);
+    setOffset(0);
+    setActiveImage(0);
+  }
 
   return <>
     {activeProject &&
-      <div className="modale-container">
+      <div className={"modale-container" + ' ' + className}>
         <div className="modale">
           <div className="top">
             <div className="title">{activeProject.title}</div>
-            <div className="close" onClick={() => setActiveProjet(null)}><img src='/icons/cross.svg' /></div>
+            <div className="close" onClick={() => closeModal()}><img alt='' src='/icons/cross.svg' /></div>
           </div>
 
           <div className="main">
@@ -31,16 +48,16 @@ const Modal = ({ limit }: { limit?: number }) => {
             </div>
 
             <div className="right">
-              <img className="main-image" src={activeProject.images[activeImage]} />
+              <img className="main-image" alt='main image' src={activeProject.images[activeImage]} />
               <div className="slider">
-                <img src="/icons/arrow-left.svg" className={"left-arrow"} onClick={() => {
+                <img src="/icons/arrow-left.svg" alt='arrow left' className={"left-arrow"} onClick={() => {
                   if (offset !== 0) setOffset(offset - 1);
                 }} />
                 <div className="images-container">
-                  <div className="images" style={{ transform: `translateX(calc(${offset * 33.33333 * -1}% + ${0 * offset * -1}px))` }}>{activeProject.images.map((el, index) =>
-                    <img className={activeImage === index ? 'active' : ''} src={el} onClick={() => setActiveImage(index)} />)}</div>
+                  <div className="images" style={{ transform: `translateX(calc(${offset * 33 * -1}% + ${1 * offset * -1}%))` }}>{activeProject.images.map((el, index) =>
+                    <img key={'image' + index} className={activeImage === index ? 'active' : ''} alt='' src={el} onClick={() => setActiveImage(index)} />)}</div>
                 </div>
-                <img src="/icons/arrow-right.svg" className="right-arrow" onClick={() => {
+                <img src="/icons/arrow-right.svg" alt='arrow right' className="right-arrow" onClick={() => {
                   if (offset < activeProject.images.length - 3) setOffset(offset + 1);
                 }} />
               </div>
@@ -49,11 +66,11 @@ const Modal = ({ limit }: { limit?: number }) => {
         </div>
       </div>}
     <div className="creations-list">
-      {projects.slice(0, limit ?? projects.length + 1).map((el: Project) => {
-        return <div className="creation">
-          <img src="placeholder.png" />
+      {projects.slice(0, limit ?? projects.length + 1).map((el: Project, index) => {
+        return <div className="creation" key={"projet" + index}>
+          <img alt='' src={el?.images[0]} />
           <div className="title">{el.title}</div>
-          <div className="link-button" onClick={() => setActiveProjet(el)}>
+          <div className="link-button" onClick={() => { openModal(el) }}>
             Afficher le projet
           </div>
         </div>
@@ -62,4 +79,4 @@ const Modal = ({ limit }: { limit?: number }) => {
   </>
 };
 
-export default Modal
+export default Creations

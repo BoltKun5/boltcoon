@@ -1,0 +1,61 @@
+.contact-page {
+  width: 1500px;
+  margin: auto;
+  display: flex;
+  padding-top: 64px;
+  gap: 0 80px;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 80%;
+
+  .side {
+    h3 {
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      letter-spacing: -0.72px;
+      margin: 16px 0;
+    }
+
+    margin-top: 10px;
+
+    .desc {
+      margin-bottom: 60px;
+    }
+  }
+
+}
+
+@media (max-width: $mediumScreen) {
+  body {
+    .home {
+      .skills-list {
+        flex-direction: column;
+
+        .skill {
+          width: 550px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $smallScreen) {
+  body {
+    .home {
+      .skills-list {
+        width: 80%;
+        flex-direction: column;
+
+        .skill {
+          width: 100%;
+        }
+      }
+    }
+
+    .home .welcome h2 {
+      font-size: 50px;
+      line-height: 50px;
+    }
+  }
+}

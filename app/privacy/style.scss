@@ -1,0 +1,17 @@
+.privacy_page {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  padding-bottom: 40px;
+
+  h1,
+  h3,
+  h4 {
+    color: rgba(0, 0, 0, .3)
+  }
+
+  h1 {
+    margin-bottom: 0;
+  }
+}
