@@ -12,8 +12,9 @@ export default function Home() {
 
     <div className="left">
       <div className="title">Qui suis-je</div>
-      <div className="text">Derrière Boltcoon se cache Farès, développeur web fullstack et freelance. Après avoir été diplômé d'une licence professionnelle en développement et design web, j'ai décidé de me lancer en tant que freelance afin de privilégier un travail de qualité pour mes clients. Alerte sur dernières technologies du web, je m'efforce de proposer un travail qui permet une pérénité du projet de mes clients sur le très long terme en utilisant des technologies offrant un potentiel d'amélioration dans le temps.<br /><br />
-        Mon objectif en tant que développeur est de produire un livrable qui répond à toutes les exigences du client et de l'utilisateur. La question ne doit pas être &quotest-ce que c'est possible&quot, mais &quotcombien de temps ça prendra&quot. La seule limite que je souhaite imposer à mes clients, c'est celle de leur imagination.<br /><br />J'utilise comme technologies principales ReactJS ou NextJS pour le front-end et Express avec Sequelize pour la création d'API. Je maîtrise également le PHP et Symfony, VueJS et le développement from scratch. 
+      <div className="text">Derrière Boltcoon se cache Farès, développeur web fullstack et freelance. Après avoir été diplômé d'une licence professionnelle en développement et design web, j'ai décidé de me lancer en tant que freelance afin d'être au plus proche de mes clients.
+        Grâce à ce contact sans intermédiaire, je peux proposer un travail qui me correspond : une longévité du projet long terme en utilisant des technologies d'actualité et une priorité au travail bien fait.<br /><br />
+        Mon objectif en tant que développeur est de produire un livrable qui répond à toutes les exigences du client et de l'utilisateur. Je m'efforce de répondre au maximum par la positive à la question "est-ce que c'est possible ?", car la seule limite que je souhaite imposer à mes clients, c'est celle de leur imagination.<br /><br />
       </div>
     </div>
 
@@ -22,15 +23,15 @@ export default function Home() {
       <div className="skills-list">
         <div className="skill">
           <div className="title">Qualité</div>
-          <div className="desc">Afin que vos projets aient un bel avenir, je privilégierais toujours les technologies qui vous correspondent le mieux</div>
+          <div className="desc">Afin que vos projets aient un bel avenir, je privilégierais toujours les technologies qui leur correspondent le mieux</div>
         </div>
         <div className="skill">
           <div className="title">Transparence</div>
-          <div className="desc">Pour un travail de qualité, une relation de confiance est indispensable. Aucun détail cachés, les devis sont clairs et précis</div>
+          <div className="desc">Pour un travail de qualité, une relation de confiance est indispensable. Aucun détail cachés, nous définirons ensemble clairement notre collaboration.</div>
         </div>
         <div className="skill">
           <div className="title">Efficacité</div>
-          <div className="desc">Car votre temps est précieux, je peux m'occuper entièrement de la gestion et de la réalisation durant toute la durée de vie du projet</div>
+          <div className="desc">Car votre temps est précieux, mes horaires de travail sont modulables pour être disponible quand vous l'êtes.</div>
         </div>
       </div>
     </div>

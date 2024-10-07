@@ -1,49 +1,222 @@
 [
   {
+    "cat": "Site vitrine / Boutique e-commerce",
+    "title": "CS Saint-Louis Handball",
+    "desc": "Afin de diversifier ses voies de communication et améliorer sa présence en ligne, le CS Saint-Louis Handball a fait appelle à moi afin de réaliser une toute nouvelle version de leur site web. Les objectifs étaient d'une part une refonte graphique, et d'autre part une facilitation de la gestion du site pour un gain de temps des administrateurs. Il a été aussi demander d'intégrer la boutique au site.\n\nPour répondre à ces demandes, j'ai d'abord proposé des maquettes, puis j'ai réalisé un thème Wordpress sur mesure. Wordpress offre la posibilié aux différents acteurs d'entrer leurs données sur le site, et les outils sur mesure développés permettent un énorme gain de temps en récupérant les résultats des matchs automatiquement sur le site web de la Fédération Fraçaise de Handball, mais aussi les postes des réseaux sociaux afin de centraliser toute l'information du club sur le site.\n\nOutils utilisés : Wordpress, Woocommerce",
+    "subtitle": "Tout un club en un site",
+    "images": [
+      {
+        "src": "stlouis_handball/image1.png",
+        "legend": "Page d'accueil du site"
+      },
+      {
+        "src": "stlouis_handball/image2.png",
+        "legend": "Affichage dynamique de résultat et calendrier regroupant tout les évènements du club"
+      },
+      {
+        "src": "stlouis_handball/image3.png",
+        "legend": "Affichage des données d'une journée du calendrier"
+      },
+      {
+        "src": "stlouis_handball/image4.png",
+        "legend": "Page spécifique à une équipe où sont affichés les matchs à venir"
+      },
+      {
+        "src": "stlouis_handball/image5.png",
+        "legend": "Page boutique"
+      },
+      {
+        "src": "stlouis_handball/image6.png",
+        "legend": "Page de contact"
+      },
+      {
+        "src": "stlouis_handball/image7.png",
+        "legend": "Page de documents mis à dispositions"
+      }
+    ]
+  },
+  {
+    "cat": "Ressource sur mesure",
+    "title": "Ressources visuelles Tarmak",
+    "desc": "Ces ressources ont été réalisées pour le projet de serveur de jeu Tarmak sur GTA V Online. Bien que le serveur n'ai finalement pas vu le jour, les ressources ont été récupérée et le projet apparaîtra sous un autre nom à l'avenir.\n\nL'objectif était de créer des interfaces personnalisées pour proposer une expérience plus immerssive au joueur. La nouvelle version du projet a pour vocation d'être réutilisable par d'autres personnes souhaitant lancer leur propre serveur, c'est pourquoi chaque page créée est grandement paramétrable.\n\nOutils utilisés : ReactJS",
+    "subtitle": "Des assets adaptables",
+    "images": [
+      {
+        "src": "tarmak/image1.png",
+        "legend": "Interface de banque en jeu"
+      },
+      {
+        "src": "tarmak/image2.png",
+        "legend": "Suivis des transactions bancaires"
+      },
+      {
+        "src": "tarmak/image3.png",
+        "legend": "Options de gestion du compte en banque"
+      },
+      {
+        "src": "tarmak/image4.png",
+        "legend": "Système de notifications, interactives ou non"
+      },
+      {
+        "src": "tarmak/image5.png",
+        "legend": "Page d'inventaire"
+      }
+    ]
+  },
+  {
+    "cat": "Application web",
+    "title": "Panel d'administration KPI",
+    "desc": "Pour la société OONA, j'ai réalisé un panel d'administration pour un client. L'objectif était de proposer un outil permettant aux différentes succursales de réaliser un retour mensuel sur différentes statistiques. Chaque succursale a accès à un compte qui lui permet, chaque mois, d'entrer les données adéquates. La maison mère a quant à elle un accès d'administrateur pour visualiser, et si nécessaire modifier, les informations de chaque succursale.\n\nLes maquettes m'ont été fournies.\n\nTechnologies utilisées : ReactJS, Express",
+    "subtitle": "Application web de gestion de données",
+    "images": [
+      {
+        "src": "kpi/image1.png",
+        "legend": "Affichage des données"
+      },
+      {
+        "src": "kpi/image2.png",
+        "legend": "Écran de connexion"
+      },
+      {
+        "src": "kpi/image3.png",
+        "legend": "Écran d'entrée des données"
+      }
+    ]
+  },
+  {
+    "cat": "Application web",
+    "title": "Domaine de la Rose - Lancôme",
+    "desc": "Pour la société OONA, j'ai eu l'occasion de travailler sur un projet à destination du Domaine de la Rose par Lancôme. L'object a été de réalisé un site web à consulter sur mobile servant de support de présentation pour la visite du Domaine de la Rose. \n\n Le site propose différents quizz à lancer tout au long de la visite. Il est optimisé pour smartphone, et permet au joueur de reprendre ses questions en cas de problème sur la page, et à l'administrateur de réinitialiser facilement le jeu, le tout dans l'optique d'avoir une marge de manœuvre afin que le site se plie au mieux aux aléas de la visite. Toutes les maquettes ont été fournies.\n\nTechnologies utilisées : ReactJS, Express",
+    "subtitle": "Application web de quizz",
+    "images": [
+      {
+        "src": "lancome/image1.png",
+        "legend": "Accueil avec choix d'une équipe"
+      },
+      {
+        "src": "lancome/image2.png",
+        "legend": "Carte interactive du Domaine de la Rose"
+      },
+      {
+        "src": "lancome/image3.png",
+        "legend": "Affichage du score des équipes en temps réel"
+      },
+      {
+        "src": "lancome/image4.png",
+        "legend": "Indications pour chaque activité"
+      },
+      {
+        "src": "lancome/image5.png",
+        "legend": "Question du quizz"
+      }
+    ]
+  },
+  {
+    "cat": "Application web",
     "title": "Vokit",
     "desc": "Ce projet personnel a été réalisé dans le but de créer un outil de gestion de collection profitant des dernières technologies que le web a à offrir. Ce projet a été intégralement réalisé par mes soins.\n\nTechnologies utilisées : ReactJS, Express, Postgres\n\n<a target='_blank' href='https://app.vokit.fr/'>vokit.fr</a>",
     "subtitle": "Site web de gestion de collection",
     "images": [
-      "vokit/image1.png",
-      "vokit/image2.png",
-      "vokit/image3.png",
-      "vokit/image4.png"
+      {
+        "src": "vokit/image1.png",
+        "legend": "Page de collection avec de nombreux filtres"
+      },
+      {
+        "src": "vokit/image2.png",
+        "legend": "Affichage détaillé d'une carte et gestion des versions possédées"
+      },
+      {
+        "src": "vokit/image3.png",
+        "legend": "Affichage de statistiques générales sur la collection"
+      },
+      {
+        "src": "vokit/image4.png",
+        "legend": "Outil de suivis de cartes obtenues en ouvrant un paquet"
+      }
     ]
   },
   {
+    "cat": "Site vitrine / Application web",
     "title": "Site web Vision RP",
     "desc": "Ce site web a été réalisé pour le serveur de jeu Vision RP présent sur GTA V Online. L'objectif était clair : avoir la possibilité pour les joueurs d'élargir la portée de leur role-play jusqu'au site internet du serveur de jeu.\n\nMon travail a été d'intégrer les maquettes et les idées qui m'ont été données. Les outils à proposer aux joueurs étaient nombreux : connexion via Discord, création d'un journal sur le site, un système de musique senblable à Spotify, la possibilité d'afficher les streamers actuellement en ligne sur le serveur entre autre, le tout supervisable par les administrateurs. Pour ça, un panel de gestion a spécialement été conçu.\n\nOutils utilisés : ReactJS, Express, MySQL, API Twitch, OAUTH Discord\n\n<a href='https://visionrp.fr' target='_blank'>visionrp.fr</a>",
     "subtitle": "Un site web avancé qui engage la communauté",
     "images": [
-      "vision_site/image1.png",
-      "vision_site/image2.png",
-      "vision_site/image3.png",
-      "vision_site/image4.png",
-      "vision_site/image5.png"
+      {
+        "src": "vision_site/image1.png",
+        "legend": "Page d'accueil"
+      },
+      {
+        "src": "vision_site/image2.png",
+        "legend": "Affichage des personnes qui diffusent en direct et qui jouent sur le serveur"
+      },
+      {
+        "src": "vision_site/image3.png",
+        "legend": "Lecteur de musique pour les créations des joueurs"
+      },
+      {
+        "src": "vision_site/image4.png",
+        "legend": "Système de playlist sur le lecteur de musique"
+      },
+      {
+        "src": "vision_site/image5.png",
+        "legend": "Page d'administration pour ajouter et modifier les informations du site"
+      }
     ]
   },
   {
+    "cat": "Ressource sur mesure",
     "title": "Ressources visuelles Vision RP",
     "desc": "Ces ressources ont été réalisées pour le serveur de jeu Vision RP présent sur GTA V Online. L'objectif a été de créer des interfaces personnalisées qu'on ne retrouve nul part chez la concurrence. Les maquettes et les fonctionnalités souhaitées m'ont été fournies, je me suis occupé d'intégrer ces idées tout en offrant une expertise afin d'optimiser au maximum le travail laborieux que représente la réalisation d'interfaces personnalisées sur l'ensemble du jeu.\n\nCela inclut entre autre : création de personnage, boutique en jeu, création et signature de contrats en jeu, gestion de véhicule ou de propriété en jeu...\n\nOutils utilisés : ReactJS\n\nLes interfaces sont visibles en jeu sur le serveur Vision RP Free Access",
-    "subtitle": "Un site web avancé qui engage la communauté",
+    "subtitle": "Un serveur GTA sur mesure",
     "images": [
-      "vision_game/image1.png",
-      "vision_game/image2.png",
-      "vision_game/image3.png",
-      "vision_game/image4.png",
-      "vision_game/image5.png",
-      "vision_game/image6.png",
-      "vision_game/image7.png"
+      {
+        "src": "vision_game/image1.png",
+        "legend": "Page d'achat de la boutique avec personnalisation de l'objet"
+      },
+      {
+        "src": "vision_game/image2.png",
+        "legend": "Menu de la boutique"
+      },
+      {
+        "src": "vision_game/image3.png",
+        "legend": "Page de gestion d'une propriété pour les promoteurs immobiliers"
+      },
+      {
+        "src": "vision_game/image4.png",
+        "legend": "Page de création de personnage (personnalisation du visage)"
+      },
+      {
+        "src": "vision_game/image5.png",
+        "legend": "Contrat en jeu signable par le joueur"
+      },
+      {
+        "src": "vision_game/image6.png",
+        "legend": "Menu d'une boutique en jeu"
+      },
+      {
+        "src": "vision_game/image7.png",
+        "legend": "Tablette en jeu avec de nombreuses actions liées au jeu RP Illégal"
+      }
     ]
   },
   {
+    "cat": "Boutique e-commerce",
     "title": "Star Market",
     "desc": "Ce site web a été réalisé pour un projet de livraison nocturne d'aliments, nourriture et objets du quotidien. La réalisation complète m'a été confiée. Pour l'aspect général, j'ai proposé différents thèmes WordPress au client avant de personnalisé le thème choisi en ajoutant des éléments supplémentaire comme un slider sur mesure.\n\nLe projet est un site de vente e-commerce classique avec quelques fonctionnalitées plus pointues comme la demande d'un montant de commande minimal en fonction de l'adresse de livraison. J'ai également proposé un suivis et une formation au client afin qu'il puisse gérer convenablement son site.\n\nOutils utilisés : Wordpress, Woocommerce, PHP\n\n<a href='https://star-market.fr' target='_blank'>star-market.fr</a>",
     "subtitle": "e-commerce de proximité",
     "images": [
-      "starmarket/image1.png",
-      "starmarket/image2.png",
-      "starmarket/image3.png"
+      {
+        "src": "starmarket/image1.png",
+        "legend": "Page d'accueil"
+      },
+      {
+        "src": "starmarket/image2.png",
+        "legend": "Page boutique"
+      },
+      {
+        "src": "starmarket/image3.png",
+        "legend": "Page panier avec minimum de paiement"
+      }
     ]
   }
 ]

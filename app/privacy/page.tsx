@@ -61,8 +61,7 @@ export default function Home() {
 
     <h4>Article 4.1 : Le responsable du traitement des données</h4>
     Le responsable du traitement des données à caractère personnel peut être contacté de la manière suivante: <br />
-    Par téléphone, au 06 51 31 35 42; <br />
-    Par mail: contact @boltcoon.fr.<br />
+    Par mail: contact@boltcoon.fr.<br />
 
     <h3>ARTICLE 5 : LES DROITS DE L'UTILISATEUR EN MATIÈRE DE COLLECTE ET DE TRAITEMENT DES DONNÉES</h3>
     Tout utilisateur concerné par le traitement de ses données personnelles peut se prévaloir des droits suivants, en application du règlement européen 2016 / 679 et de la Loi Informatique et Liberté(Loi 78 - 17 du 6 janvier 1978) : <br />

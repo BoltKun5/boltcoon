@@ -24,8 +24,7 @@ export default function Home() {
 
     <h4>Nous contacter</h4>
 
-    <p>Par téléphone : +33651313542<br />
-      Par email : contact@boltcoon.fr</p>
+    <p>Par email : contact@boltcoon.fr</p>
 
     <h4>Données personnelles</h4>
 

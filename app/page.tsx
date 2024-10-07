@@ -30,7 +30,7 @@ export default function Home() {
     </div>
 
     <div className="creations">
-      <h3>Made by Boltcoon</h3>
+      <h3>Certains de mes projets</h3>
 
       <Creations limit={4} />
 
@@ -41,7 +41,7 @@ export default function Home() {
 
     <div className="about">
       <h3>À propos</h3>
-      <div className="about-text">En tant que développeur web fullstack en freelance, je suis passioné par le processus de réalisation des projets de développement. Je ferais de mon mieux pour mettre les dernières technologies du web au service de vos projets. <br /><br />Mon mot d'ordre, c'est que la seule limite à votre projet, c'est votre imagination.</div>
+      <div className="about-text">En tant que développeur web fullstack en freelance, je suis passioné par le processus de réalisation des projets de développement. Je ferais de mon mieux pour mettre les dernières technologies du web au service de vos projets. <br /><br />Ma philosophie, c'est que la seule limite à votre projet, c'est votre imagination.</div>
       <div className="link-button">
         <Link href='/work'>Voir plus</Link>
       </div>

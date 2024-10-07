@@ -42,6 +42,9 @@
 
     img {
       border-radius: 4px;
+      aspect-ratio: 311 / 175;
+      object-fit: cover;
+      border: 1px solid #A3A3A3;
     }
 
     .title {
@@ -50,6 +53,7 @@
       font-weight: 700;
       line-height: normal;
       margin: 10px 0;
+      margin-top: -1px;
     }
 
     .desc {
@@ -69,7 +73,7 @@
   border-radius: 8px;
   border: 4px solid rgba(0, 0, 0, 0.10);
   background: #FFF;
-  padding: 64px;
+  padding: 30px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -77,17 +81,17 @@
   max-height: 95%;
 
 
-
   &-container {
     background: rgba(0, 0, 0, 0.30);
     position: fixed;
     width: 100%;
-    height: 100vh;
-    top: 0;
+    height: calc(100vh - 80px);
+    bottom: 0;
     left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1000;
 
     &.fade-in {
       animation: fade-in forwards .3s;
@@ -125,6 +129,13 @@
         border-radius: 6px;
         object-fit: contain;
         background-color: rgba(0, 0, 0, 0.20);
+        border: 1px solid #A3A3A3;
+      }
+
+      .legend {
+        font-size: 13px;
+        height: 15px;
+        font-style: italic;
       }
 
       .slider {
@@ -143,13 +154,17 @@
             display: flex;
             transition: .3s;
             gap: 2%;
+            height: 100%;
+            max-height: 100%;
 
             img {
               width: 32%;
-              aspect-ratio: 155 / 100;
               object-fit: cover;
               border-radius: 5px;
               cursor: pointer;
+              object-position: center;
+              aspect-ratio: 166 / 98;
+              border: 1px solid #A3A3A3;
 
               &:not(.active) {
                 filter: grayscale(.7);
@@ -329,4 +344,18 @@
   to {
     opacity: 0;
   }
+}
+
+.cat {
+    margin: 10px 0 0px 0;
+    background-color: #A3A3A3;
+    width: fit-content;
+    padding: 3px;
+    border-radius: 3px;
+    color: white;
+    font-size: 12px;
+}
+
+.modale .cat {
+  margin: 0;
 }

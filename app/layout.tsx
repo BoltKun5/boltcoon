@@ -35,7 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                         <div className="title">Contact</div>
                         <ul>
                             <li><img src='/icons/mail.svg' alt='' /><a href='mailto:contact@boltcoon.fr'>contact@boltcoon.fr</a></li>
-                            <li><img src='/icons/phone.svg' alt='' />06 51 31 35 42</li>
+                            <li><img src='/icons/discord.webp' alt='' />boltkun</li>
                         </ul>
                     </div>
                     <div className="legal">
