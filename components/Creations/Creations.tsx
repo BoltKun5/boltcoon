@@ -57,8 +57,8 @@ const Creations = ({ limit }: { limit?: number }) => {
                   if (offset !== 0) setOffset(offset - 1);
                 }} />
                 <div className="images-container">
-                  <div className="images" style={{ transform: `translateX(calc(${offset * 33 * -1}% + ${1 * offset * -1}%))` }}>{activeProject.images.map((el, index) =>
-                    <img key={'image' + index} className={activeImage === index ? 'active' : ''} alt='' src={el.src} onClick={() => setActiveImage(index)} />)}</div>
+                  <div className="images" style={{ transform: `translateX(calc(${offset * 33 * -1}% + ${1 * offset * -1}% + ${offset * .5}px))` }}>{activeProject.images.map((el, index) =>
+                    <img key={'image' + index} className={activeImage === index ? 'active' : ''} alt='' src={el.src.replace('/', '/low_')} onClick={() => setActiveImage(index)} />)}</div>
                 </div>
                 <img src="/icons/arrow-right.svg" alt='arrow right' className="right-arrow" onClick={() => {
                   if (offset < activeProject.images.length - 3) setOffset(offset + 1);

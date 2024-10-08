@@ -68,7 +68,7 @@
 
 .modale {
   width: 1180px;
-  height: 700px;
+  height: 600px;
   background-color: white;
   border-radius: 8px;
   border: 4px solid rgba(0, 0, 0, 0.10);
@@ -77,7 +77,6 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  overflow-y: auto;
   max-height: 95%;
 
 
@@ -105,8 +104,12 @@
   .main {
     display: flex;
     flex: 1 1 auto;
-    padding-top: 40px;
+    margin-top: 20px;
     gap: 40px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+
 
     .subtitle {
       font-size: 24px;
@@ -117,11 +120,13 @@
     }
 
     .left {
-      width: calc(50% - 20px);
+      width: calc(50% - 21px);
+      box-sizing: border-box;
     }
 
     .right {
-      width: calc(55% - 20px);
+      box-sizing: border-box;
+      width: calc(50% - 21px);
 
       .main-image {
         width: 100%;
@@ -158,13 +163,14 @@
             max-height: 100%;
 
             img {
-              width: 32%;
+              width: calc(32%);
               object-fit: cover;
               border-radius: 5px;
               cursor: pointer;
               object-position: center;
               aspect-ratio: 166 / 98;
               border: 1px solid #A3A3A3;
+              box-sizing: border-box;
 
               &:not(.active) {
                 filter: grayscale(.7);
@@ -213,6 +219,8 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    border-bottom: 1px solid #A3A3A3;
+    padding-bottom: 20px;
 
     .close {
       margin-left: auto;
@@ -263,6 +271,7 @@
       grid-template-columns: 47.5% 47.5%;
       gap: 5%;
       width: 95%;
+      padding-bottom: 40px;
 
       .creation {
         width: auto;
@@ -287,6 +296,7 @@
       padding: 10px;
 
       .main {
+        padding-right: 10px;
         .right {
           width: 100%;
           margin: auto;
@@ -308,6 +318,11 @@
     .creations-list {
       width: 90%;
       grid-template-columns: 100%;
+      gap: 2%;
+      padding-bottom: 30px;
+      height: fit-content;
+      margin: 0;
+      margin-bottom: 140px;
 
 
       .creation {
@@ -347,13 +362,13 @@
 }
 
 .cat {
-    margin: 10px 0 0px 0;
-    background-color: #A3A3A3;
-    width: fit-content;
-    padding: 3px;
-    border-radius: 3px;
-    color: white;
-    font-size: 12px;
+  margin: 10px 0 0px 0;
+  background-color: #A3A3A3;
+  width: fit-content;
+  padding: 3px;
+  border-radius: 3px;
+  color: white;
+  font-size: 12px;
 }
 
 .modale .cat {
